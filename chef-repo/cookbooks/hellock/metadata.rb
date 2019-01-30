@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures hellock'
 long_description 'Installs/Configures hellock'
-version '0.1.8'
+version '0.1.12'
 chef_version '>= 12.14' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
@@ -18,3 +18,7 @@ chef_version '>= 12.14' if respond_to?(:chef_version)
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/hellock'
+
+depends 'java', '~> 3.2.0'
+depends 'mysql', '~> 8.0'
+depends 'chef-client', '~> 11.0.5'
